@@ -1,0 +1,62 @@
+
+GET {{BASE_URL}}
+
+###
+GET {{BASE_URL}}/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlkNDIwNmY4OTU1OTRhYWM2YTBmMzAiLCJpYXQiOjE2Mzc2OTYwMjcsImV4cCI6MTYzNzY5OTYyN30.L3XE2RI0lK94oZwRS_F4bYy5djsHyllEcqRJeJzpUPk
+
+###
+GET {{BASE_URL}}/users/5
+
+###
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+  "isim": "Alpeeess26",
+  "username": "alpgggger",
+  "email": "bddfy2@gmail.com",
+  "sifre": "123456"
+}
+###
+POST {{BASE_URL}}/users/giris
+Content-Type: application/json
+
+{
+  "email": "bdfdfdfy2@gmail.com",
+  "sifre": "123456"
+}
+
+###
+PATCH {{BASE_URL}}/users/619b9c865d89da5d4024471e
+Content-Type: application/json
+
+{
+ "isim":"alper",
+  "email": "alperrrr@edf.com",
+  "username": "aslan222",
+  "sifre": "454545454dfdf"
+}
+
+###
+PATCH {{BASE_URL}}/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlkNDIwNmY4OTU1OTRhYWM2YTBmMzAiLCJpYXQiOjE2Mzc2OTYwMjcsImV4cCI6MTYzNzY5OTYyN30.L3XE2RI0lK94oZwRS_F4bYy5djsHyllEcqRJeJzpUPk
+
+{
+  "isim":"alper",
+  "sifre": "454545454dfdf"
+}
+
+###
+DELETE {{BASE_URL}}/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlkNDIwNmY4OTU1OTRhYWM2YTBmMzAiLCJpYXQiOjE2Mzc2OTYwMjcsImV4cCI6MTYzNzY5OTYyN30.L3XE2RI0lK94oZwRS_F4bYy5djsHyllEcqRJeJzpUPk
+
+
+###
+DELETE {{BASE_URL}}/users/619a53a9835f97686c3aea8d
+Content-Type: application/json
+
+###
+GET {{BASE_URL}}/users/deleteAll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlkNDIwNmY4OTU1OTRhYWM2YTBmMzAiLCJpYXQiOjE2Mzc2OTYwMjcsImV4cCI6MTYzNzY5OTYyN30.L3XE2RI0lK94oZwRS_F4bYy5djsHyllEcqRJeJzpUPk
